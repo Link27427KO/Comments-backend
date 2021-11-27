@@ -1,0 +1,4 @@
+{
+  "port": 5000,
+  "mongoUri": "mongodb+srv://Kolyan:12345@cluster0.s5vf9.mongodb.net/kolyan-server?retryWrites=true&w=majority"
+}
