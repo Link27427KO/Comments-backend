@@ -28,6 +28,14 @@ class CommentController {
             return res.status(400).json({error: "Error"})
         }
     }
+    async testGetRequest(req, res) {
+        try {
+
+            return res.status(200).json({message: 'get test'})
+        } catch (e) {
+            return res.status(400).json({error: "Error"})
+        }
+    }
 }
 
 module.exports = new CommentController()
