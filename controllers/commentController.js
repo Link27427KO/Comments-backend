@@ -28,6 +28,15 @@ class CommentController {
             return res.status(400).json({error: "Error"})
         }
     }
+
+    async testPostRequest(req, res) {
+        try {
+
+            return res.status(200).json({message: 'post test'})
+        } catch (e) {
+            return res.status(400).json({error: "Error"})
+        }
+    }
 }
 
 module.exports = new CommentController()
